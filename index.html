@@ -10,7 +10,7 @@
 <body>
     <main>
       <div class="box">
-        <form action="">
+        <form action="https://formsubmit.co/david.costa@rioscenarium.com.br" method="POST">
           <img src="img/logo-branca-rs.png" alt="logo-branca-rs"> <br>
           <fieldset>
             <legend><b>Formulário de Seleção de Fornecedores</b></legend>
@@ -23,11 +23,6 @@
             <div class="inputBox">
               <input type="text" name="empresa" id="empresa" class="inputUser" required>
               <label for="empresa" class="labelInput">Empresa</label>
-            </div>
-            <br><br>
-            <div class="inputBox">
-              <input type="text" name="empresa" id="empresa" class="inputUser" required>
-              <label for="empresa" class="labelInput">Email</label>
             </div>
             <br><br>
             <div class="inputBox">
@@ -58,16 +53,16 @@
             <p>Tempo de Atividade no ramo</p>
             <div class="atividade">
               <br>
-              <input type="checkbox" name="dois" id="dois" value="dois" required>
+              <input type="checkbox" name="dois" id="dois" value="dois">
               <label for="dois">Até 2 anos</label>
               <br>
-              <input type="checkbox" name="doisacinco" id="doisacinco" value="doisacinco" required>
+              <input type="checkbox" name="doisacinco" id="doisacinco" value="doisacinco" >
               <label for="doisacinco">02 à 05 anos</label>
               <br>
-              <input type="checkbox" name="cincoadez" id="cincoadez" value="cincoadez" required>
+              <input type="checkbox" name="cincoadez" id="cincoadez" value="cincoadez" >
               <label for="cincoadez">5 à 10 anos</label>
               <br>
-              <input type="checkbox" name="dez" id="dez" value="dez" required>
+              <input type="checkbox" name="dez" id="dez" value="dez" >
               <label for="dez">+10 anos </label>
             </div>
             <br><br>
@@ -93,6 +88,7 @@
               <label for="cliente3" class="labelInput">Cliente:</label>
             </div>
             <br><br>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
             <input type="submit" name="submit" id="submit">
           </fieldset>
         </form>
