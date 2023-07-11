@@ -11,6 +11,11 @@ body {
   background: linear-gradient(to right,#0c1a1aec, #5f2c82);
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 .container {
   color: white;
   position: absolute;
