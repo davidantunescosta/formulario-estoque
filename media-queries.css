@@ -1,1 +1,50 @@
 @charset "UTF-8";
+
+/*Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.*/
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+ .box {
+  width: 481px;
+ }
+
+p {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+ .atividade {
+  display: flex;
+  justify-content: center;
+  justify-content:space-around;
+ }
+}
+
+@media screen and (min-width: 1025px) {
+  .box {
+    width: 1020px;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .atividade {
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+   }
+
+   .data {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+   }
+}
