@@ -10,46 +10,60 @@
 <body>
     <main>
       <div class="box">
-        <form action="https://formsubmit.co/david.costa@rioscenarium.com.br" method="POST">
+        <form id="form" action="https://formsubmit.co/david.costa@rioscenarium.com.br" method="POST">
           <img src="img/logo-branca-rs.png" alt="logo-branca-rs"> <br>
           <fieldset>
             <legend><b>Formulário de Seleção de Fornecedores</b></legend>
+            <!--Inicio dados solicitados-->
+            <div class="inputBox">
+              <input type="tel" name="cnpj" id="cnpj" class="inputUser required" required>
+              <label for="cnpj" class="labelInput">CNPJ</label>
+            </div>
+            <br>
             <br>
             <div class="inputBox">
-              <input type="text" name="categoria" id="categoria" class="inputUser" required>
-              <label for="nome" class="labelInput">Categoria</label>
+              <input type="text" name="categoria" id="categoria" class="inputUser required">
+              <label for="categoria" class="labelInput">Categoria</label>
             </div>
             <br><br>
             <div class="inputBox">
-              <input type="text" name="empresa" id="empresa" class="inputUser" required>
+              <input type="text" name="empresa" id="empresa" class="inputUser required">
               <label for="empresa" class="labelInput">Empresa</label>
             </div>
             <br><br>
             <div class="inputBox">
-              <input type="text" name="endereco" id="endereco" class="inputUser" required>
+              <input type="text" name="endereco" id="endereco" class="inputUser required" required>
               <label for="endereco" class="labelInput">Endereço</label>
             </div>
             <br><br>
             <div class="inputBox">
-              <input type="tel" name="cep" id="cep" class="inputUser" required>
+              <input type="tel" name="cep" id="cep" class="inputUser required" required>
               <label for="cep" class="labelInput">CEP</label>
             </div>
             <br><br>
             <div class="inputBox">
-              <input type="text" name="email" id="email" class="inputUser" required>
+              <input type="text" name="email" id="email" class="inputUser required" >
               <label for="email" class="labelInput">Email</label>
             </div>
             <br><br>
             <div class="inputBox">
-              <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+              <input type="text" name="redes" id="redes" class="inputUser required" required>
+              <label for="redes" class="labelInput">Redes Sociais</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+              <input type="tel" name="telefone" id="telefone" class="inputUser required" required>
               <label for="telefone" class="labelInput">Contato</label>
             </div>
             <br><br>
             <div class="inputBox">
               <input type="site" name="site" id="site" class="inputUser">
-              <label for="site" class="labelInput">Site</label>
+              <label for="site" class="labelInput required">Site</label>
             </div>
             <br><br>
+            <!--Final dados solicitados--> 
+            
+            <!--Inicio section de Atividade no ramo-->
             <p>Tempo de Atividade no ramo</p>
             <div class="atividade">
               <br>
@@ -71,6 +85,9 @@
               <input type="date" name="data_pesquisa" id="data_pesquisa" required>
             </div>
             <br><br>
+            <!--Final section de Atividade no ramo-->
+
+            <!--Inicio section de Principais Clientes-->
             <p>Os 3 Principais Clientes</p>
             <br>
             <div class="inputBox">
@@ -88,6 +105,8 @@
               <label for="cliente3" class="labelInput">Cliente:</label>
             </div>
             <br><br>
+            <!--Final section de Principais Clientes-->
+
             <input type="submit" name="submit" id="submit">
 
             <input type="hidden" name="_next" value="https://davidantunescosta.github.io/formulario-estoque01/obrigado.html">
@@ -96,4 +115,5 @@
       </div>
     </main>
 </body>
+  <script src="script.js"></script>
 </html>
